@@ -1,0 +1,33 @@
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Файлы Python
+*.pyc
+__pycache__/
+
+# Файлы среды выполнения
+.env
+
+# Логи
+*.log
+
+# Директория с cookies
+cookies/
+
+# Файлы IDE
+.vscode/
+.idea/
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы зависимостей
+pip-lock.txt
+
+# Временные файлы
+*.tmp
+*.bak
+*.swp
