@@ -38,6 +38,23 @@ The API will be available at `http://localhost:8000`. Main endpoints:
 
 Detailed API documentation can be found at `http://localhost:8000/docs`.
 
+### Usage example
+
+```python
+from openai import OpenAI
+
+client = OpenAI(base_url="http://localhost:8000/v1", api_key="xxxxxx")
+
+response = client.chat.completions.create(
+    model="meta-llama/Meta-Llama-3.1-70B-Instruct",
+    messages=[
+        {"role": "user", "content": "Hello, how are you?"}
+    ]
+)
+
+print(response.choices[0].message.content)
+```
+
 ## Important Note
 
 This project uses [HuggingChat](https://huggingface.co/chat/) as its foundation. If HuggingFace requests the removal of this project, we will promptly comply with their request.
